@@ -3,6 +3,10 @@ html {
     font-size: 16px;
 }
 
+a {
+    display: block;
+}
+
 .products {
     display: flex;
     flex-direction: row;
@@ -76,7 +80,7 @@ figure {
     height: 65px;
 }
 
-.button__price, .button__buy {
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,6 +90,17 @@ figure {
     color: black;
     text-decoration: none;
 }
+
+/*.button__price, .button__buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}*/
 
 .button__price {
     background-color: #eaeaea;
@@ -108,8 +123,10 @@ figure {
 
 
 .button__buy::after {
-    content: url(../images/kosik.png);
+    /*content: url(../images/kosik.png);*/
+    content: "";
+    background:url(../images/kosik.png);
     margin-left: 3px;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 21px;
 }
